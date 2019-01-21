@@ -1,0 +1,15 @@
+$mq-1: 48em !default; /* 768 / 16px = 48em */
+
+/* Extra small devices (phones up to 480px) */
+@mixin extra-small-only {
+  @media only screen and (max-width: $mq-1 - 0.0625) {
+    @content;
+  }
+}
+
+/* Small devices (Tablets, 768px and up) */
+@mixin small-and-above {
+  @media only screen and (min-width: $mq-1) {
+    @content;
+  }
+}

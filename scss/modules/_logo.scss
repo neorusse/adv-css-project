@@ -1,0 +1,16 @@
+/********************
+Logo Module
+*********************/
+.logo {
+  overflow: hidden; /*Note: The reason for overflow: hidden; is to mask part of the logo for mobile view.*/
+  display: inline-block;
+}
+
+.logo-primary {
+  width: 64px; /*The width and height are set to 64px to style out the mobile state first.*/
+  height: 64px;
+}
+
+.logo-primary img {
+  height: 100%; /*Makes the logo image to scale up and fill the available space*/
+}

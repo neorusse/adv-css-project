@@ -1,0 +1,65 @@
+/********************
+Testimonial Module
+*********************/
+.testimonial {
+  text-align: center;
+}
+
+.testimonial-primary {
+  background-color: #594a42;
+  color: white;
+}
+
+/*This means: apply all the style rules of .hero-primary including opacity: 0.55 to the image*/
+.tesimonial-primary.bg-image > img {
+  opacity: 0.55;
+}
+
+.testimonial-body {
+  position: relative;
+}
+
+.testimonial-star ul {
+  padding: 40px 0 50px 0;
+  margin: 0px;
+}
+
+.testimonial-star li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 15px;
+}
+
+.testimonial-quote {
+  font-size: 1.2em;
+  padding: 0 0 40px;
+  margin: 0px;
+}
+
+.testimonial-quote blockquote,
+p {
+  display: inline;
+}
+
+.testimonial-blockquote {
+  font-style: italic;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+
+@media (min-width: 48em) {
+  .testimonial-star ul {
+    padding: 60px 0;
+  }
+
+  .testimonial-quote {
+    padding-bottom: 60px;
+    font-size: 1.4em;
+  }
+}

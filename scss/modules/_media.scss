@@ -1,0 +1,38 @@
+/********************
+Media Object Module
+*********************/
+.media {
+  padding-top: 40px;
+}
+
+.media,
+.media-body {
+  overflow: hidden; /*This will stop the media object's content from wrapping.*/
+}
+
+.media-body button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.media-item {
+  float: left;
+  margin-right: 35px;
+}
+
+.media-item i {
+  color: #594a42;
+  font-size: 5em;
+}
+
+.media-item img {
+  display: block;
+}
+
+/* Extra Small devices (Phones, up to 480px) */
+@media only screen and (max-width: 47.9375em) {
+  .media-display {
+    padding-top: 0px;
+    text-align: left;
+  }
+}

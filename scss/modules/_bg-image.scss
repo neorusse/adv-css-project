@@ -1,0 +1,19 @@
+/********************
+Background Module
+*********************/
+.bg-image {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/*Direct img child of .bg-image selected so that we can position the image*/
+.bg-image > img {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+}

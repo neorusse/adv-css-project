@@ -1,0 +1,75 @@
+/********************
+Button Module
+*********************/
+.btn {
+  /* Basic Button Styles */
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  /* Mockup Styles */
+  padding: 12px 30px;
+  font-size: 1.313em;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s; /* This Includes a Fade Transition for Button Hover State */
+}
+
+/*Button Primary - Modifies the Base Button*/
+.btn-primary {
+  background: #8dc63f;
+  border-color: #8dc63f;
+  color: white;
+}
+
+/*Button Display - Modifies the Base Button*/
+.btn-display {
+  display: block;
+}
+
+/*Button Style for Mouse "Hover-State" Appearance*/
+.btn-primary:hover {
+  background: none;
+  border-color: white;
+  text-decoration: none;
+}
+
+.btn-nav {
+  color: white;
+}
+
+.btn-toggle-menu {
+  position: absolute; /*It is depending on the window for it's relative position*/
+  top: 15px;
+  right: 15px;
+}
+
+.btn--hero {
+  background: none;
+  border: 1px solid #fff;
+  color: white;
+  font-size: 1.75em;
+  border-radius: 4px;
+  padding: 15px 30px;
+}
+
+.btn--hero:hover {
+  background: #fff;
+  color: #39b54a;
+}
+
+@media (min-width: 48em) {
+  /*Button Primary - Modifies the Base Button*/
+  .btn-primary {
+    font-size: 1.125em;
+    padding: 10px 15px;
+  }
+
+  .btn-toggle-menu {
+    display: none; /*Don't display Toggle Button for Small Devices (tablets, 768px and up)*/
+  }
+}
